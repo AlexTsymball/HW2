@@ -30,9 +30,7 @@ public class Task1 {
     public static void main(String[] args) {
         Task1 task1 = new Task1();
         try {
-            long start = System.currentTimeMillis();
             task1.copyFileWithModificationNameSurname();
-            System.out.println(System.currentTimeMillis() - start);
         } catch (IOException e) {
             e.printStackTrace();
         }
