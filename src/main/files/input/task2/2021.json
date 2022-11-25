@@ -1,0 +1,30 @@
+[
+  {
+    "date_time": "2021-05-05 15:39:03",
+    "first_name": "Ivan",
+    "last_name": "Ivanov",
+    "type": "SPEEDING",
+    "fine_amount": 340.00
+  },
+  {
+    "date_time": "2021-05-05 15:39:03",
+    "first_name": "Ivan",
+    "last_name": "Ivanov",
+    "type": "PARKING VIOLATIONS",
+    "fine_amount": 340.00
+  },
+  {
+    "date_time": "2021-05-05 15:39:03",
+    "first_name": "Ivan",
+    "last_name": "Ivanov",
+    "type": "DRINK AND DRUG DRIVING",
+    "fine_amount": 340.00
+  },
+  {
+    "date_time": "2021-05-05 15:39:03",
+    "first_name": "Ivan",
+    "last_name": "Ivanov",
+    "type": "TRAFFIC LIGHT VIOLATIONS",
+    "fine_amount": 340.00
+  }
+]

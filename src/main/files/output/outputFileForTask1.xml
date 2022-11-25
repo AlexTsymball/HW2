@@ -1,0 +1,30 @@
+<persons>
+    <person name="Іван Котляревський"  birthDate="09.09.1769" /><person name="Василь Стус"      birthDate="09.09.1769" />
+    <person name="Ліна Костенко" birthDate="09.03.1814" />
+    <person birthasDate="09.03.1814" name="Павло Тичина"  />
+    <person name="Григорій Сковорода" birthDate="09.03.1814"  />
+    <person         name="Тарас Шевченко"    birthDate="09.03.1814"        />
+    <person        birthDate="09.03.1814"
+            name=" їЇєЄіІяЯ" />
+    <person
+            birthData="27.08.1856"
+            name = "Іван Франко"
+             />
+    <person
+            birthData="27.08.1856"
+           
+            name = "Марко Вовчок"/>
+    <person
+            name = "Іван Нечуй-Левицький"
+            birthData="27.08.1856"  />
+    <person
+           
+            birthData="27.08.1856" name = "Микола Хвильовий" />
+    <person
+           
+            birthData="27.08.1856"
+            name = "Олена Пчілка" />
+    <person name="Леся Українка"
+            
+            birthData="13.02.1871" />
+</persons>

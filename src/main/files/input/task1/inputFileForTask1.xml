@@ -1,0 +1,30 @@
+<persons>
+    <person name="Іван" surname="Котляревський" birthDate="09.09.1769" /><person name="Василь"     surname="Стус" birthDate="09.09.1769" />
+    <person surname="Костенко" name="Ліна" birthDate="09.03.1814" />
+    <person surname="Тичина" birthasDate="09.03.1814" name="Павло"  />
+    <person surname="Сковорода" name="Григорій" birthDate="09.03.1814"  />
+    <person         name="Тарас"    birthDate="09.03.1814"  surname="Шевченко"      />
+    <person surname="їЇєЄіІяЯ"        birthDate="09.03.1814"
+            name="" />
+    <person
+            birthData="27.08.1856"
+            name = "Іван"
+            surname = "Франко" />
+    <person
+            birthData="27.08.1856"
+            surname = "Вовчок"
+            name = "Марко"/>
+    <person
+            name = "Іван"
+            birthData="27.08.1856" surname = "Нечуй-Левицький" />
+    <person
+            surname = "Хвильовий"
+            birthData="27.08.1856" name = "Микола" />
+    <person
+            surname = "Пчілка"
+            birthData="27.08.1856"
+            name = "Олена" />
+    <person name="Леся"
+            surname="Українка"
+            birthData="13.02.1871" />
+</persons>
