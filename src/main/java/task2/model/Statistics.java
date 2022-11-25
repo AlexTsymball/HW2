@@ -31,7 +31,7 @@ public class Statistics {
                             if (a.getValue() < Double.MAX_VALUE) {
                                 return new TypeAndSum(a.getKey(), a.getValue());
                             } else {
-                                throw new IllegalArgumentException("too big value for calculate sum");
+                                throw new IllegalArgumentException("too big value for right calculate sum");
                             }
                         }
                 )
