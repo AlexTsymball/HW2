@@ -28,6 +28,7 @@ public class Task2 {
             }
 
         }
+
         statistics.groupAndSort();
         writeStatistics2XML(statistics);
 
@@ -40,7 +41,7 @@ public class Task2 {
             TypeAndSum typeAndSum;
             while (jsonParser.nextToken() != JsonToken.END_ARRAY) {
                 typeAndSum = new TypeAndSum();
-                while (jsonParser.nextToken() != JsonToken.END_OBJECT){
+                while (jsonParser.nextToken() != JsonToken.END_OBJECT) {
                     String fieldname = jsonParser.getCurrentName();
 
                     if ("type".equals(fieldname)) {
@@ -48,7 +49,7 @@ public class Task2 {
                         typeAndSum.setType(jsonParser.getText());
                     } else if ("fine_amount".equals(fieldname)) {
                         jsonParser.nextToken();
-                        typeAndSum.setSum_fine_amount(jsonParser.getDoubleValue());
+                        typeAndSum.setSumFineAmount(jsonParser.getDoubleValue());
                     }
                 }
                 statistics.addFines(typeAndSum);
@@ -69,14 +70,10 @@ public class Task2 {
     }
 
 
-    private void writeStatistics2XML(Statistics statistics) {
+    private void writeStatistics2XML(Statistics statistics) throws IOException {
         XmlMapper xmlMapper = new XmlMapper();
         xmlMapper.enable(SerializationFeature.INDENT_OUTPUT);
-        try {
-            xmlMapper.writeValue(new File(PATH_TO_DIRECTORIES_WITH_FILES + "output/statisticsTask2.xml"),
-                    statistics);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+        xmlMapper.writeValue(new File(PATH_TO_DIRECTORIES_WITH_FILES + "output/statisticsTask2.xml"),
+                statistics);
     }
 }

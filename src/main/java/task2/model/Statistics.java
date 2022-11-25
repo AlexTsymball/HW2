@@ -24,19 +24,19 @@ public class Statistics {
 
     public void groupAndSort() {
         fines = fines.stream()
-                .collect(Collectors.groupingBy(TypeAndSum::getType, Collectors.summingDouble(TypeAndSum::getSum_fine_amount)))
+                .collect(Collectors.groupingBy(TypeAndSum::getType, Collectors.summingDouble(TypeAndSum::getSumFineAmount)))
                 .entrySet()
                 .stream()
                 .map(a -> {
-                            if (a.getValue() != Double.POSITIVE_INFINITY) {
+                            if (a.getValue() < Double.MAX_VALUE) {
                                 return new TypeAndSum(a.getKey(), a.getValue());
                             } else {
                                 throw new IllegalArgumentException("too big value for calculate sum");
                             }
                         }
                 )
+                .sorted(Comparator.comparing(TypeAndSum::getSumFineAmount).reversed())
                 .collect(Collectors.toList());
-        fines.sort(Comparator.comparing(TypeAndSum::getSum_fine_amount).reversed());
-
     }
+
 }

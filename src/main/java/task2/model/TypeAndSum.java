@@ -10,7 +10,7 @@ import lombok.Setter;
 
 
 @JsonAutoDetect
-@JsonPropertyOrder({"type", "sum_fine_amount"})
+@JsonPropertyOrder({"type", "sumFineAmount"})
 @Getter
 @Setter
 @NoArgsConstructor
@@ -18,6 +18,6 @@ import lombok.Setter;
 public class TypeAndSum {
     private String type;
     @JsonProperty("sum")
-    private Double sum_fine_amount;
+    private Double sumFineAmount;
 
 }
