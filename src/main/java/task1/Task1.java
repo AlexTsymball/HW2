@@ -14,14 +14,13 @@ public class Task1 {
     private static final String PATH_TO_DIRECTORIES_WITH_FILES = "src/main/files/";
     /**
      * it will find 8 strings:
-     * 1,6 - "name" or "surname"
-     * 2,7 - whitespace characters with "=" after "name" or "surname" (to preserve formatting). For output file
+     * 1,5 - "name" or "surname"
+     * 2,6 - whitespace characters with "=" after "name" or "surname" (to preserve formatting). For output file
      * will take formatting that near the name.
-     * 3,8 - name or surname
+     * 3,7 - name or surname
      * 4 - characters that are between name and surname. It use to preserve formatting after deleting surname.
      */
     private static final Pattern FIND_NAME_SURNAME_WITH_FORMATTING_PATTERN
-//            = Pattern.compile("\\s(surname|name)(\\s*=\\s*)\"([^\"]*)\"(\\s[^sn]*\\s|\\s)(surname|name)(\\s*=\\s*)\"([^\"]*)\"(\\s?)");
             = Pattern.compile("\\s(surname|name)(\\s*=\\s*)\"([^\"]*)\"(\\s+(?!surname|name).*\\s+|\\s)(surname|name)(\\s*=\\s*)\"([^\"]*)\"");
     /**
      * check the right order of name and surname
