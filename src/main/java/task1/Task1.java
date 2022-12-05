@@ -42,7 +42,8 @@ public class Task1 {
                 .useDelimiter("/>");
              BufferedWriter bufferedWriter = new
                      BufferedWriter(
-                     new FileWriter(PATH_TO_DIRECTORIES_WITH_FILES + "output/outputFileForTask1.xml"))) {
+                     new FileWriter(PATH_TO_DIRECTORIES_WITH_FILES + "output/outputFileForTask1.xml",
+                             StandardCharsets.UTF_8))) {
             while (scanner.hasNextLine()) {
                 String person = scanner.next();
                 Matcher matcher = FIND_NAME_SURNAME_WITH_FORMATTING_PATTERN.matcher(person);
